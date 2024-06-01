@@ -3,7 +3,7 @@
 
 int main(int argc, char const *argv[])
 {
-	int length;
+	int length = 1;
 
 	std::cout<<"Enter number of subjects: ";
 	std::cin>>length;
