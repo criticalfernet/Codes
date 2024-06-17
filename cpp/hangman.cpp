@@ -19,6 +19,7 @@ struct word makeword(char const input[16]) {
     }
   }
   struct word output = {input, len};
+  //std::cout << "Length: " << len << '\n';
   return output;
 }
 
@@ -115,9 +116,9 @@ void getInput(struct word *string, char display[], int *lives) {
 int main(int argc, char const *argv[]) {
   int lives = 8; // declare ^LIVES
   int length = INPUT.length ;
-  struct letter word[length] = {};
+  struct letter word[length];
 
-  char display[length] = {}; // makes the output/display
+  char display[length]; // makes the output/display
   for (int i = 0; i < length; ++i) {
     display[i] = '-';
   }
